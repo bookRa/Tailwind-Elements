@@ -7,12 +7,12 @@
 
 // `<button>`-specific styles are denoted with `// For <button>s`
 .dropdown-item {
-  &.active,
-  &:active {
-    color: rgb(31, 41, 55);
-    text-decoration: none;
-    @include gradient-bg($dropdown-link-active-bg);
-  }
+  // &.active,
+  // &:active {
+  //   color: rgb(31, 41, 55);
+  //   text-decoration: none;
+  //   @include gradient-bg($dropdown-link-active-bg);
+  // }
 
   &:disabled {
     color: $dropdown-link-disabled-color;

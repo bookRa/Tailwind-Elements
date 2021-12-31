@@ -13,6 +13,8 @@ module.exports = plugin(
           body: ['Inter', 'sans-serif'],
           mono: ['ui-monospace', 'monospace'],
         },
+        backgroundColor: ['checked', 'active', 'disabled'],
+        textColor: ['active', 'disabled'],
       },
     },
   }
