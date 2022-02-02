@@ -1,7 +1,7 @@
 ---
 title: "Sidenav"
 date: 2021-04-29T16:00:58+02:00
-draft: true
+draft: false
 main_title: "Tailwind Sidenav component"
 subheading: ""
 seo_title: "Tailwind CSS sidenav component - examples & tutorial"
@@ -15,56 +15,24 @@ menu:
 ---
 
 <!-- prettier-ignore -->
-{{< twsnippet/demo id="example1" title_id="basic" title="Basic">}}
-<aside class="w-full p-6 sm:w-60 bg-white text-gray-800">
-  <nav class="space-y-8 text-sm">
-    <div class="space-y-2">
-      <h2 class="text-sm font-semibold tracking-widest uppercase text-gray-600">
-        Getting Started
-      </h2>
-      <div class="flex flex-col space-y-1">
-        <a href="#">Installation</a>
-        <a href="#">Plugins</a>
-        <a href="#">Migrations</a>
-        <a href="#">Appearance</a>
-        <a href="#">Mamba UI</a>
-      </div>
-    </div>
-    <div class="space-y-2">
-      <h2 class="text-sm font-semibold tracking-widest uppercase text-gray-600">
-        Dashboard
-      </h2>
-      <div class="flex flex-col space-y-1">
-        <a href="#">Header</a>
-        <a href="#">Drawer</a>
-        <a href="#">Page Title</a>
-        <a href="#">Menus</a>
-        <a href="#">Sidebar</a>
-        <a href="#">Footer</a>
-      </div>
-    </div>
-    <div class="space-y-2">
-      <h2 class="text-sm font-semibold tracking-widest uppercase text-gray-600">
-        Pages
-      </h2>
-      <div class="flex flex-col space-y-1">
-        <a href="#">Homepage</a>
-        <a href="#">Users</a>
-        <a href="#">Tools</a>
-        <a href="#">Settings</a>
-      </div>
-    </div>
-    <div class="space-y-2">
-      <h2 class="text-sm font-semibold tracking-widest uppercase text-gray-600">
-        Misc
-      </h2>
-      <div class="flex flex-col space-y-1">
-        <a href="#">Tutorials</a>
-        <a href="#">Changelog</a>
-      </div>
-    </div>
-  </nav>
-</aside>
+{{< twsnippet/demo id="example1" title_id="basic" title="Basic example">}}
+<section class="relative overflow-x-hidden h-96 min-h-full border bg-gray-50">
+
+  <div class="w-60 h-full shadow-md bg-white px-1 absolute">
+    <ul class="relative">
+      <li class="relative">
+        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Sidenav link 1</a>
+      </li>
+      <li class="relative">
+        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Sidenav link 2</a>
+      </li>
+      <li class="relative">
+        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Sidenav link 2</a>
+      </li>
+    </ul>
+  </div>
+
+</section>
 
 {{< /twsnippet/demo >}}
 
@@ -72,87 +40,19 @@ menu:
   <div class="pt-4">
     {{< twsnippet/wrapper "HTML" >}} {{< twsnippet/code active=true lang="HTML"
     >}}
-    <aside class="w-full p-6 sm:w-60 bg-white text-gray-800">
-      <nav class="space-y-8 text-sm">
-        <div class="space-y-2">
-          <h2
-            class="
-              text-sm
-              font-semibold
-              tracking-widest
-              uppercase
-              text-gray-600
-            "
-          >
-            Getting Started
-          </h2>
-          <div class="flex flex-col space-y-1">
-            <a href="#">Installation</a>
-            <a href="#">Plugins</a>
-            <a href="#">Migrations</a>
-            <a href="#">Appearance</a>
-            <a href="#">Mamba UI</a>
-          </div>
-        </div>
-        <div class="space-y-2">
-          <h2
-            class="
-              text-sm
-              font-semibold
-              tracking-widest
-              uppercase
-              text-gray-600
-            "
-          >
-            Dashboard
-          </h2>
-          <div class="flex flex-col space-y-1">
-            <a href="#">Header</a>
-            <a href="#">Drawer</a>
-            <a href="#">Page Title</a>
-            <a href="#">Menus</a>
-            <a href="#">Sidebar</a>
-            <a href="#">Footer</a>
-          </div>
-        </div>
-        <div class="space-y-2">
-          <h2
-            class="
-              text-sm
-              font-semibold
-              tracking-widest
-              uppercase
-              text-gray-600
-            "
-          >
-            Pages
-          </h2>
-          <div class="flex flex-col space-y-1">
-            <a href="#">Homepage</a>
-            <a href="#">Users</a>
-            <a href="#">Tools</a>
-            <a href="#">Settings</a>
-          </div>
-        </div>
-        <div class="space-y-2">
-          <h2
-            class="
-              text-sm
-              font-semibold
-              tracking-widest
-              uppercase
-              text-gray-600
-            "
-          >
-            Misc
-          </h2>
-          <div class="flex flex-col space-y-1">
-            <a href="#">Tutorials</a>
-            <a href="#">Changelog</a>
-          </div>
-        </div>
-      </nav>
-    </aside>
+    <div class="w-60 h-full shadow-md bg-white px-1 absolute">
+      <ul class="relative">
+        <li class="relative">
+          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Sidenav link 1</a>
+        </li>
+        <li class="relative">
+          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Sidenav link 2</a>
+        </li>
+        <li class="relative">
+          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Sidenav link 2</a>
+        </li>
+      </ul>
+    </div>
     {{< /twsnippet/code>}} {{< /twsnippet/wrapper>}}
   </div>
 </section>
